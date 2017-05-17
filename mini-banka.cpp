@@ -34,4 +34,18 @@ int main()
             cout << brRacuna[i] << " "<< prezimeIme[i] << "saldo:" << saldo[i] << endl;
         }
     }
+    else if(izboir == 3)
+    {
+        cout << "Unesite broj racuna koji zelite pronaci:" ;
+        unsigned long long int brRacunaKojegTrazimo;
+        cin >> brRacunaKojegTrazimo;
+        for(int i = 0; i < brojKlijenata == brRacuna[i])
+        {
+            if(brRacunaKojegTrazimo == brRacuna[i])
+            {
+                cout << "Osoba je pronadjena." << endl;
+                break;
+            }
+        }
+    }
 }
