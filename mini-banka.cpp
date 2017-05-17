@@ -21,6 +21,8 @@ int main()
         cout << "Unesite broj racuna:";
         cin >> brRacuna [brojKlijenata];
         cout << "Unesite prezime i ime:" << endl;
+        //! moramo ignoritari novi redak
+        cin.ignore();
         getline(cin, prezimeIme[brojKlijenata]);
         saldo[brojKlijenata] = 0;
         brojKlijenata++;
