@@ -12,17 +12,24 @@ int main()
     int izbor;
     cin >> izbor;
 
-    unsigned long long int brBacuna[50];
+    unsigned long long int brRacuna[50];
     string prezimeIme[50];
-    float saldov[50];
+    float saldo[50];
     int brojKlijenata = 0;
     if (izbor == 1)
     {
         cout << "Unesite broj racuna:";
-        cin >> brRacuna[brojKlijenata];
+        cin >> brRacuna [brojKlijenata];
         cout << "Unesite prezime i ime:" << endl;
         getline(cin, prezimeIme[brojKlijenata]);
         saldo[brojKlijenata] = 0;
-        brojKlijenta++;
+        brojKlijenata++;
+    }
+    else if(izbor == 2)
+    {
+        for(int i = 0; i < brojKlijenata; i++)
+        {
+            cout << brRacuna[i] << " "<< prezimeIme[i] << "saldo:" << saldo[i] << endl;
+        }
     }
 }
